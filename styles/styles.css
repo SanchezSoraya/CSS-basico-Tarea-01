@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --fondoPrimario: #FCF7F8;
+    --colorOscuro: #1A1E21;
+    --azul: #3860EC;
+}
+
+body {
+    background: var(--fondoPrimario);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.titulo::first-letter {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--colorOscuro);
+    margin-bottom: 20px;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.grupo {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grupo div p,
+.grupo div div,
+.grupo div span,
+.grupo ul li {
+    background: #dbdbdb;
+    padding: 10px;
+}
+
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+
+.enlace:active {
+    background: lime;
+}
+
+.enlace:link {
+    color: blue;
+}
+
+.enlace:visited {
+    color: purple;
+}
+
+.enlace:hover {
+    color: yellow;
+}
+
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+
+.parrafos p:first-child {
+    background: var(--azul);
+    color: #fff;
+}
+
+.parrafos p:last-child {
+    background: #000;
+    color: #fff;
+}
+
+h2 {
+    font-size: 12px;
+    text-align: justify;
+}
+
+
+/* ? --- --- --- --- Pseudo-elementos --- --- --- --- */
+
+.contenedor1 {
+    background: black;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.logo {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    width: 70%;
+}
+
+.dialogo {
+    background: grey;
+    padding: 25px;
+    color: black;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+}
+
+
+/* Pseudoelementos CSS */
+
+.dialogo::first-line {
+    background: red;
+}
+
+.dialogo::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    border-top: 20px solid gray;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    right: 50%;
+}
+
+.boton {
+    width: 100%;
+    background: blue;
+    display: inline-block;
+    padding: 25px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: .3s ease all;
+}
+
+.boton:hover {
+    background: blue;
+}
+
+.enlace1 {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
